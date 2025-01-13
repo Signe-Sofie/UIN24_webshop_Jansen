@@ -85,7 +85,7 @@ header {
             a {
                 text-transform: uppercase;
                 color: var(--white);
-                padding: 0.5rem 1rem;
+                padding: calc(0.5rem + 4px) 1rem;
                 display: inline-block;
                 text-decoration: none;
                 border-bottom: 4px solid var(--red);
@@ -100,16 +100,23 @@ header {
 } 
 
 main {
+   
+
+    #productlist {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-left: 1rem;
     padding-right: 1rem;
+    }
 
     h2 {
         width: 100%;
         display: block;
+        font-size: 2.5rem;
+        text-align: center;
+        text-transform: uppercase;
     }
 
     article {
@@ -142,6 +149,7 @@ main {
             background: var(--green);
             color: var(--white);
             padding: 0.5rem 1rem;
+            border: none;
         }
     }
 }
